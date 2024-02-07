@@ -2,28 +2,28 @@
     {
         "id": 1,
         "testimony": "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
-        "profile": "../../public/testimonials-1.png",
+        "profile": "../testimonials-1.png",
         "profileAlt": "profile1",
         "profileName": "Sarah L"
     },
     {
         "id": 2,
         "testimony": "The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!",
-        "profile": "../../public/testimonials-2.png",
+        "profile": "../testimonials-2.png",
         "profileAlt": "profile2",
         "profileName": "Jason M"
     },
     {
         "id": 3,
         "testimony": "The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!",
-        "profile": "../../public/testimonials-3.png",
+        "profile": "../testimonials-3.png",
         "profileAlt": "profile3",
         "profileName": "Emily R"
     },
     {
         "id": 4,
         "testimony": "I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly.",
-        "profile": "../../public/testimonials-4.png",
+        "profile": "../testimonials-4.png",
         "profileAlt": "profile4",
         "profileName": "Michael K"
     }

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "../../public/courses-1.jpg",
+        "image": "../courses-1.jpg",
         "imageAlt": "Image 1",
         "Duration": "4 Weeks",
         "Level": "Beginner",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "image": "../../public/courses-4.jpg",
+        "image": "../courses-4.jpg",
         "imageAlt": "Image 2",
         "Duration": "6 Weeks",
         "Level": "Intermediate",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "image": "../../public/courses-7.jpg",
+        "image": "../courses-7.jpg",
         "imageAlt": "Image 3",
         "Duration": "8 Weeks",
         "Level": "Intermediate",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "image": "../../public/courses-10.jpg",
+        "image": "../courses-10.jpg",
         "imageAlt": "Image 4",
         "Duration": "10 Weeks",
         "Level": "Beginner",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "image": "../../public/courses-13.jpg",
+        "image": "../courses-13.jpg",
         "imageAlt": "Image 5",
         "Duration": "10 Weeks",
         "Level": "Intermediate",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "image": "../../public/courses-15.jpg",
+        "image": "../courses-15.jpg",
         "imageAlt": "Image 6",
         "Duration": "6 Weeks",
         "Level": "Advance",
