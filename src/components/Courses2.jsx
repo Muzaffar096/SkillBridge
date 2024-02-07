@@ -1,72 +1,8 @@
 import Title from "./SectionTitle";
-import PropTypes from 'prop-types'
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
-
+import tracks from "../data/course.json"
 function Courses2() {
-
-    const tracks = [
-        {
-            id: 1,
-            image: "../../public/courses-1.jpg",
-            imageAlt: "Image 1",
-            Duration: "4 Weeks",
-            Level: "Beginner",
-            Name: "By John Smith",
-            Track: "Web Design Fundamentals",
-            Descrption: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites."
-        },
-        {
-            id: 2,
-            image: "../../public/courses-4.jpg",
-            imageAlt: "Image 2",
-            Duration: "6 Weeks",
-            Level: "Intermediate",
-            Name: "By Emily Johnson",
-            Track: "UI/UX Design",
-            Descrption: "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques."
-        },
-        {
-            id: 3,
-            image: "../../public/courses-7.jpg",
-            imageAlt: "Image 3",
-            Duration: "8 Weeks",
-            Level: "Intermediate",
-            Name: "By David Brown",
-            Track: "Mobile App Development",
-            Descrption: "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin."
-        },
-        {
-            id: 4,
-            image: "../../public/courses-10.jpg",
-            imageAlt: "Image 4",
-            Duration: "10 Weeks",
-            Level: "Beginner",
-            Name: "By Sarah Thompson",
-            Track: "Graphic Design for Beginners",
-            Descrption: "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media."
-        },
-        {
-            id: 5,
-            image: "../../public/courses-13.jpg",
-            imageAlt: "Image 5",
-            Duration: "10 Weeks",
-            Level: "Intermediate",
-            Name: "By Michael Adams",
-            Track: "Front-End Web Development",
-            Descrption: "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites."
-        },
-        {
-            id: 6,
-            image: "../../public/courses-15.jpg",
-            imageAlt: "Image 6",
-            Duration: "6 Weeks",
-            Level: "Advance",
-            Name: "By Jennifer Wilson",
-            Track: "Advanced JavaScript",
-            Descrption: "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence."
-        },
-    ];
 
     return (
         <div className="container mx-auto">
@@ -144,19 +80,6 @@ function CoursesCard({
             </div>
         </div>
     )
-}
-
-CoursesCard.propTypes = {
-    courseCard: PropTypes.exact({
-        image: PropTypes.string.isRequired,
-        imageAlt: PropTypes.string.isRequired,
-        Duration: PropTypes.string.isRequired,
-        Level: PropTypes.string.isRequired,
-        Name: PropTypes.string.isRequired,
-        Track: PropTypes.string.isRequired,
-        Descrption: PropTypes.string.isRequired,
-        id: PropTypes.number.isRequired
-    })
 }
 
 export default Courses2;
