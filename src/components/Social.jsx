@@ -1,50 +1,18 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
+import abstract from "../../public/icons/Abstract-Line.svg";
+import flash from "../../public/icons/flash.svg";
+import zapier from "../../public/logos/zapier.svg";
+import spotify from "../../public/logos/spotify.svg";
+import zoom from "../../public/logos/zoom.svg";
+import amazon from "../../public/logos/amazon.svg";
+import adobe from "../../public/logos/adobe.svg";
+import notion from "../../public/logos/notion.svg";
+import netflix from "../../public/logos/netflix.svg";
+import socialImg from "../../public/man-and-girl.png";
 
-function Social({
-  abstract,
-  abstractAlt,
-  flashIcon,
-  flashIconAlt,
-  subSocialTitle,
-  socialNtitle,
-  socialText,
-  socialTitle,
-  socialImg,
-  socialAlt,
-}) {
-  const brands = [
-    {
-      image: "../../public/logos/zapier.svg",
-      imageAlt: "zapierLogo",
-    },
-    {
-      image: "../../public/logos/spotify.svg",
-      imageAlt: "spotifyLogo",
-    },
-    {
-      image: "../../public/logos/zoom.svg",
-      imageAlt: "zoomLogo",
-    },
-    {
-      image: "../../public/logos/amazon.svg",
-      imageAlt: "amazonLogo",
-    },
-    {
-      image: "../../public/logos/adobe.svg",
-      imageAlt: "adobeLogo",
-    },
-    {
-      image: "../../public/logos/notion.svg",
-      imageAlt: "notionLogo",
-    },
-    {
-      image: "../../public/logos/netflix.svg",
-      imageAlt: "netflixLogo",
-    },
-  ];
-
+function Social({ subSocialTitle, socialNtitle, socialText, socialTitle }) {
   return (
     <div className="container mx-auto flex justify-center mt-[100px]">
       <div>
@@ -52,11 +20,11 @@ function Social({
           <div className="flex items-center border border-[#F1F1F3] rounded-[11px] bg-[#FCFCFD] py-2 md:py-3.5 px-[10px] md:px-[30px] relative">
             <img
               src={abstract}
-              alt={abstractAlt}
+              alt="abstractAlt"
               className="absolute top-[-15px] left-[-15px] md:top-[-25px] md:left-[-25px]"
             />
             <div className="bg-[#FFF4E5] p-3.5 rounded-[6px] me-4">
-              <img src={flashIcon} alt={flashIconAlt} />
+              <img src={flash} alt="flashIconAlt" />
             </div>
             <span className="font-[600] noBreak text-[15px] md:text-[30px] lg:text-[38px]">
               <span className="text-[#FF9500]">{subSocialTitle}</span>
@@ -94,22 +62,18 @@ function Social({
           </NavLink>
         </div>
         <div className="border border-[#F1F1F3] bg-[#FCFCFD] rounded-[12px] flex justify-center gap-[60px] items-center px-[30px] py-[50px] my-[90px] flex-wrap  brand">
-          {brands.map((brand) => {
-            return (
-              <img
-                src={brand.image}
-                alt={brand.imageAlt}
-                key={brand.imageAlt}
-                aria-label="lazy"
-                decoding="async"
-              />
-            );
-          })}
+          <img src={zapier} alt="Zapier Logo" />
+          <img src={spotify} alt="Spotify Logo" />
+          <img src={zoom} alt="Zoom Logo" />
+          <img src={amazon} alt="Amazon Logo" />
+          <img src={adobe} alt="Adobe Logo" />
+          <img src={notion} alt="Notion Logo" />
+          <img src={netflix} alt="Netflix Logo" />
         </div>
         <div data-aos="flip-right" data-aos-duration="1500">
           <img
             src={socialImg}
-            alt={socialAlt}
+            alt="socialAlt"
             aria-label="lazy"
             decoding="async"
           />
@@ -120,16 +84,10 @@ function Social({
 }
 
 Social.propTypes = {
-  abstract: PropTypes.string.isRequired,
-  abstractAlt: PropTypes.string.isRequired,
-  flashIcon: PropTypes.string.isRequired,
-  flashIconAlt: PropTypes.string.isRequired,
   socialTitle: PropTypes.string.isRequired,
   subSocialTitle: PropTypes.string.isRequired,
   socialNtitle: PropTypes.string.isRequired,
   socialText: PropTypes.string.isRequired,
-  socialImg: PropTypes.string.isRequired,
-  socialAlt: PropTypes.string.isRequired,
 };
 
 export default Social;

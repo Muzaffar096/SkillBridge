@@ -24,16 +24,10 @@ const Home = () => {
   return (
     <div>
       <Social
-        abstract="../../public/icons/Abstract-Line.svg"
-        abstractAlt="spark"
-        flashIcon="../../public/icons/flash.svg"
-        flashIconAlt="flash_icon"
         subSocialTitle="Unlock"
         socialTitle="Your Creative Potential"
         socialNtitle="With Online Design and Development Courses."
         socialText="Learn from Industry Experts and Enhance Your Skills."
-        socialImg="../../public/man-and-girl.png"
-        socialAlt="Social Img"
       />
       <Benefits />
       <Courses2 />
